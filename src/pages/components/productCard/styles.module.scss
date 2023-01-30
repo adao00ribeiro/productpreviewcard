@@ -1,0 +1,129 @@
+.card {
+    margin: 0 auto;
+    background-color: var(--White);
+    width: 550px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+
+}
+
+.imageProduct {
+    width: 55%;
+    background-image: url("/images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.cardRight {
+    width: 45%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+
+    h2 {
+
+        line-height: 2rem;
+        font-family: 'Fraunces', sans-serif;
+        margin: 0;
+        text-align: start;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        letter-spacing: .2rem;
+        color: var(--Dark-grayish-blue);
+        margin: 0;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    span {
+        text-align: start;
+        font-size: 1rem;
+        color: var(--Dark-grayish-blue);
+    }
+}
+
+.containerPrecos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+        font-family: 'Fraunces', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--Darkcyan);
+    }
+
+    p {
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+}
+
+.btn {
+    background-color: var(--Darkcyan);
+    width: 100%;
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    img {
+        color: var(--White);
+        width: 15px;
+        height: 15px;
+    }
+
+    span {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--White);
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .card {
+
+        margin-top: 5px;
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .imageProduct {
+        width: 100%;
+        height: calc(100vw - 40vw);
+        background-image: url("/images/image-product-mobile.jpg");
+        border-radius: 5px 5px 0 0;
+
+    }
+
+    .cardRight {
+
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+
+
+
+}
