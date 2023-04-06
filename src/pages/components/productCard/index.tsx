@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss"
-
-export function ProductCard() {
+import Image from 'next/image'
+export default function ProductCard() {
     return (
         <div className={styles.card}>
             <div className={styles.imageProduct}></div>
@@ -13,7 +13,11 @@ export function ProductCard() {
                     <span>$149.99</span>
                     <p>$169,99</p>
                 </div>
-                <button className={styles.btn}> <img src="/images/icon-cart.svg" alt="" /> <span>Add to Cart</span>
+                <button className={styles.btn}>
+                    <div className={styles.containerImageCart}>
+                        <Image src="/images/icon-cart.svg" alt="" fill />
+                    </div>
+                    <span>Add to Cart</span>
                 </button>
             </div>
         </div>

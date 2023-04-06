@@ -84,12 +84,6 @@
     border-radius: 5px;
     cursor: pointer;
 
-    img {
-        color: var(--White);
-        width: 15px;
-        height: 15px;
-    }
-
     span {
         font-size: 12px;
         font-weight: 700;
@@ -97,6 +91,16 @@
     }
 }
 
+.containerImageCart {
+    position: relative;
+    width: 15px;
+    height: 15px;
+
+
+    img {
+        color: var(--White);
+    }
+}
 
 @media screen and (max-width: 550px) {
     .card {
